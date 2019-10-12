@@ -1,4 +1,5 @@
-// pages/deployFunctions/deployFunctions.js
+const app = getApp()
+// pages/chooseLib/chooseLib.js
 Page({
 
   /**

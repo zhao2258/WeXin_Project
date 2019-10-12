@@ -1,0 +1,14 @@
+/**index.wxss**/
+.page{
+  background: pink;
+}
+.page__hd{
+  width: 90%;
+  margin: 0 auto;
+}
+.weui-tabbar{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+}

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view>Hello World！</view>
+  <view>我是首页!</view>
+  <view>
+    <button class="gotoBtn" bindtap="gotoBtnView"> 跳转 </button> 
+  </view>
+</view>
