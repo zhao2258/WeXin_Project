@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class='header'>
+    <button class='addButton'>新增备忘录</button>
+  </view>
+  <view class='content'>
+    <view wx:if="{{todoList.length>0}}">
+      <view class='todolist_item' wx:for="{{todoList}}" wx:key="key">
+        <text>标题：{{item.title}}</text>
+        <text>创建时间：{{item.createDate}}</text>
+        <text>更新时间：{{item.updateDate}}</text>
+        <text>是否完成：{{item.iscomplete ? "已完成" : "未完成"}}</text>
+        <text>内容：{{item.content}}</text>
+      </view>
+    </view>
+    <view class='noData' wx:else>
+      <cover-image src="../../images/noData.png" />
+      <text>暂无数据哦！  o_0</text>
+    </view>
+  </view>
+</view>

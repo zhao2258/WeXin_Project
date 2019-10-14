@@ -12,12 +12,10 @@ Page({
     // }]
   },
   onLoad:function(){
-    console.log('进入地图页面！')
     const vm = this
     wx.getLocation({
       type: 'wgs84',
       success(res) {
-        console.log(this,res)
         const latitude = res.latitude
         const longitude = res.longitude
         const speed = res.speed

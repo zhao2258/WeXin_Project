@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/index",
     "pages/map/map",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/todoList/todoList"
   ],
   "permission": {
     "scope.userLocation": {
@@ -25,6 +26,12 @@
         "iconPath": "images/map.png",
         "pagePath": "pages/map/map",
         "text": "地图"
+      },
+      {
+        "selectedIconPath": "images/todoList.png",
+        "iconPath": "images/todoList.png",
+        "pagePath": "pages/todoList/todoList",
+        "text": "备忘录"
       },
       {
         "selectedIconPath": "images/me.png",

@@ -1,14 +1,20 @@
 /**index.wxss**/
-.page{
+.header{
   background: pink;
+  /* position: relative; */
 }
-.page__hd{
-  width: 90%;
-  margin: 0 auto;
+.search{
+  height: 70rpx;
+  z-index: 1000;
 }
-.weui-tabbar{
-  position:fixed;
-  bottom:0;
-  left:0;
-  right:0;
+.search_input{
+  width: 85%;
+  background: white;
+  border: 1rpx solid lightgray;
+  margin:0 auto;
+  border-radius: 30rpx;
+  top: -20rpx;
+  position: relative;
+  box-shadow: 5rpx 5rpx 5rpx lightgray;
+  padding: 10rpx 15rpx;
 }
