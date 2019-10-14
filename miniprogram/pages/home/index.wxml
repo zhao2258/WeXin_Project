@@ -1,8 +1,12 @@
 <!--index.wxml-->
 <view class="container">
-  <view>Hello World！</view>
-  <view>我是首页!</view>
-  <view>
-    <button class="gotoBtn" bindtap="gotoBtnView"> 跳转 </button> 
+  <view class="header">
+    <view>
+    <cover-image src="../../images/index/background.jpg" />
+    </view>
+    <view class='search'>
+      <input class="search_input"/>
+    </view>
   </view>
+  <view>我是首页!</view>
 </view>

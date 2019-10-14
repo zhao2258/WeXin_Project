@@ -1,0 +1,23 @@
+.addButton{
+  background: #f3f3f3;
+}
+.content{
+  margin-top: 5px;
+  border-top: 1px solid lightgray;
+  width: 100%;
+}
+.noData{
+  text-align: center;
+  width: 80%;
+  margin: 10px auto;
+}
+.todolist_item{
+  border: 1px solid lightgray;
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius:20px; 
+
+}
+.todolist_item text{
+  display: block;
+} 
