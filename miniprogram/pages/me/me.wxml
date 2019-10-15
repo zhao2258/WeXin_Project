@@ -1,3 +1,4 @@
 <view class="container">
-  <view>我是我的页</view>
+  <open-data type="userAvatarUrl"></open-data>
+  <open-data type="userNickName"></open-data>
 </view>

@@ -1,10 +1,10 @@
 <view class='container'>
   <view class='header'>
-    <button class='addButton'>新增备忘录</button>
+    <button bindtap='addRecord' class='addButton'>新增纪录</button>
   </view>
   <view class='content'>
     <view wx:if="{{todoList.length>0}}">
-      <view class='todolist_item' wx:for="{{todoList}}" wx:key="key">
+      <view class='todolist_item' bindtap='goDetail' data-item='{{item}}' wx:for="{{todoList}}" wx:key="key">
         <text>标题：{{item.title}}</text>
         <text>创建时间：{{item.createDate}}</text>
         <text>更新时间：{{item.updateDate}}</text>

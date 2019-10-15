@@ -1,0 +1,19 @@
+<view class='container'>
+  <form class='form' bindsubmit="formSubmit" bindreset="formReset">
+    <view class='title'>
+      <view class="section__title">标题:</view>
+      <input style='padding:10rpx' class="section__input" name="title" placeholder="请输入标题" />
+    </view>
+    <view class="switch">
+      <view class="section__title">是否已完成:</view>
+      <switch name="iscomplete"/>
+    </view>
+    <view class="textarea">
+      <textarea style='padding:10rpx' bindblur="bindTextAreaBlur" name="content" auto-height placeholder="请输入详细的内容..."/>
+    </view>
+    <view class="btn-area">
+      <button class='btn' formType="submit">提交</button>
+      <button class='btn' formType="reset">重置</button>
+    </view>
+  </form>
+</view>
