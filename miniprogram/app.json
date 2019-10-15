@@ -1,9 +1,12 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/home/index",
     "pages/map/map",
     "pages/me/me",
-    "pages/todoList/todoList"
+    "pages/todoList/todoList",
+    "pages/todoListAdd/todoListAdd",
+    "pages/todoListDetail/todoListDetail"
   ],
   "permission": {
     "scope.userLocation": {

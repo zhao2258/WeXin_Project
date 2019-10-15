@@ -1,0 +1,20 @@
+<view class='container'>
+  <form class='form' bindsubmit="formSubmit" bindreset="formReset">
+    <view class='title'>
+      <view class="section__title">标题:</view>
+      <input value="{{detailData.title}}" style='padding:10rpx' class="section__input" name="title" placeholder="请输入标题" />
+    </view>
+    <view class="switch">
+      <view class="section__title">是否已完成:</view>
+      <switch value="{{detailData.iscomplete}}" name="iscomplete"/>
+    </view>
+    <view class="textarea">
+      <textarea style='padding:10rpx' bindblur="bindTextAreaBlur" name="content" auto-height placeholder="请输入详细的内容..." value="{{detailData.content}}"/>
+    </view>
+    <view class="btn-area">
+      <button class='btn' formType="submit">保存</button>
+      <button class='btn' formType="reset">重置</button>
+      <button class='btn' bindtap='todoListDelete'>删除</button>
+    </view>
+  </form>
+</view>

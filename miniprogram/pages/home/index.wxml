@@ -4,9 +4,9 @@
     <view>
     <cover-image src="../../images/index/background.jpg" />
     </view>
-    <view class='search'>
+    <!-- <view class='search'>
       <input class="search_input"/>
-    </view>
+    </view> -->
   </view>
   <view>我是首页!</view>
 </view>

@@ -1,44 +1,37 @@
 const moment = require('../../utils/moment.min.js')
 Page({
   data:{
-    todoList:[
-      {
-        title:'减肥', 
-        createDate:1571023172000,
-        updateDate: 1570936772000,
-        content:'减肥到130斤',
-        iscomplete:false,
-      },
-      {
-        title: '赚钱',
-        createDate: 1571013172000,
-        updateDate: 1570023172000,
-        content: '先存到十万',
-        iscomplete: false,
-      },
-      {
-        title: '买车',
-        createDate: 1570936772000,
-        updateDate: 1571022172000,
-        content: '领克01高能版',
-        iscomplete: false,
-      }
-    ]
+    todoList:[]
   },
-  onLoad:function(){
-    console.log('todoList', this.data.todoList)
-    let list = this.data.todoList
-    list.map(item => {
-      console.log('item',item)
-      if(item.createDate){
-        item.createDate = moment(item.createDate).format('YYYY-MM-DD HH:mm')
-      }
-      if (item.updateDate){
-        item.updateDate = moment(item.updateDate).format('YYYY-MM-DD HH:mm')
+  onShow:function(){
+    const db = wx.cloud.database()
+    const vm = this
+    db.collection('todoList').get({
+      success(res){
+        let list = res.data
+        list.map(item => {
+          if(item.createDate){
+            item.createDate = moment(item.createDate).format('YYYY-MM-DD HH:mm')
+          }
+          if (item.updateDate){
+            item.updateDate = moment(item.updateDate).format('YYYY-MM-DD HH:mm')
+          }
+        })
+        vm.setData({
+          todoList: list
+        })
       }
     })
-    this.setData({
-      todoList:list
+  },
+  goDetail:function(res){
+    let item = res.currentTarget.dataset.item
+    wx.navigateTo({
+      url: '../todoListDetail/todoListDetail?id=' + item._id
+    })
+  },
+  addRecord:function(res){
+    wx.navigateTo({
+      url: '../todoListAdd/todoListAdd'
     })
   }
 })
