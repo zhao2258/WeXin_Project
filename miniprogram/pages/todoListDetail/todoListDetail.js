@@ -10,6 +10,7 @@ Page({
     db.collection('todoList').doc(options.id).get({
       success: function (res) {
         // res.data 包含该记录的数据
+        console.log('获取数据',res)
         vm.setData({
           detailData:res.data
         })

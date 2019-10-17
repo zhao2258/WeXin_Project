@@ -18,3 +18,28 @@
   box-shadow: 5rpx 5rpx 5rpx lightgray;
   padding: 10rpx 15rpx;
 }
+
+.show-author {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: #000;
+  opacity: 0.5;
+}
+
+.show-author-title {
+  position: absolute;
+  top: 40%;
+  left: 22.3%;
+  color: #fff;
+}
+
+.show-author-title button {
+  width: 200%;
+  height: 100rpx;
+  background-color: lightblue;
+  line-height: 100rpx;
+}
