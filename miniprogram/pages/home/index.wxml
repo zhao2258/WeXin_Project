@@ -1,5 +1,11 @@
 <!--index.wxml-->
 <view class="container">
+  <!-- <view class='show-author' style='display:{{ismask}}'>
+      <view class='show-author-title'>
+        <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap='closeHide'>授权登录</button>
+        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">电话授权</button>
+      </view>
+  </view> -->
   <view class="header">
     <view>
     <cover-image src="../../images/index/background.jpg" />

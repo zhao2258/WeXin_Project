@@ -6,7 +6,7 @@
     </view>
     <view class="switch">
       <view class="section__title">是否已完成:</view>
-      <switch value="{{detailData.iscomplete}}" name="iscomplete"/>
+      <switch checked="{{detailData.iscomplete}}" name="iscomplete"/>
     </view>
     <view class="textarea">
       <textarea style='padding:10rpx' bindblur="bindTextAreaBlur" name="content" auto-height placeholder="请输入详细的内容..." value="{{detailData.content}}"/>
