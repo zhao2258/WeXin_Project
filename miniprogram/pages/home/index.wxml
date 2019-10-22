@@ -14,5 +14,8 @@
       <input class="search_input"/>
     </view> -->
   </view>
-  <view>我是首页!</view>
+  <view class="Title" style="margin:30rpx 0;color:gray">你在我心里永远是故乡！</view>
+  <view style="text-indent:2em;padding:0 1rem">
+    一心一赤子，一云一蓝天，一花一境界，一叹一华年。流年逝水，思绪荡漾，不禁感喟道…华年赤子心，何处是归途？
+  </view>
 </view>

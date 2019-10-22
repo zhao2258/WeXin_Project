@@ -18,7 +18,10 @@
   box-shadow: 5rpx 5rpx 5rpx lightgray;
   padding: 10rpx 15rpx;
 }
-
+.Title{
+  margin: 30rpx 0;
+  color: gray;
+}
 .show-author {
   position: absolute;
   top: 0;

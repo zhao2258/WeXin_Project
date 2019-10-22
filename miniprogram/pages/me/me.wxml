@@ -1,4 +1,7 @@
 <view class="container">
   <open-data type="userAvatarUrl"></open-data>
   <open-data type="userNickName"></open-data>
+  <view>
+    <button bindtap="onShowModal" style="border:1px solid lightgray">支持下作者</button>
+  </view>
 </view>

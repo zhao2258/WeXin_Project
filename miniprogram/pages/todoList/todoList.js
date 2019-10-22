@@ -18,7 +18,7 @@ Page({
           }
         })
         vm.setData({
-          todoList: list
+          todoList: list.reverse()
         })
       }
     })

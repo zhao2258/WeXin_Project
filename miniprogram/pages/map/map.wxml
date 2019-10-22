@@ -1,4 +1,12 @@
 <view class="container">
   <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" 
- bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 100%;"></map>
+  enable-traffic="{true}"
+ bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 100%;">
+  <!-- <cover-view class="cover-view">
+    <cover-view class="container">
+      <cover-view class="flex-wrp" style="flex-direction:row;background:pink;width:100;height">
+      </cover-view>
+    </cover-view>
+  </cover-view> -->
+ </map>
 </view>
