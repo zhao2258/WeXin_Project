@@ -33,7 +33,7 @@
         "selectedIconPath": "images/todoList.png",
         "iconPath": "images/todoList.png",
         "pagePath": "pages/todoList/todoList",
-        "text": "备忘录"
+        "text": "归途"
       },
       {
         "selectedIconPath": "images/me.png",
@@ -49,6 +49,5 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }

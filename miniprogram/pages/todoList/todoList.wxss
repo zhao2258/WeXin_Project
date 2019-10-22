@@ -1,4 +1,5 @@
 .addButton{
+  margin-top: 5px;
   background: #f3f3f3;
 }
 .content{

@@ -16,6 +16,17 @@ Page({
 
   },
 
+  onShowModal: function (){
+    wx.showModal({
+      title: '一分也是爱',
+      content: '<view>wos</view>',
+      showCancel: true,//是否显示取消按钮
+      cancelText: "否",//默认是“取消”
+      cancelColor: 'skyblue',//取消文字的颜色
+      confirmText: "是",//默认是“确定”
+      confirmColor: 'skyblue',//确定文字的颜色
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,6 +1,6 @@
 <view class='container'>
   <view class='header'>
-    <button bindtap='addRecord' class='addButton'>新增纪录</button>
+    <button bindtap='addRecord' class='addButton'>新增足迹</button>
   </view>
   <view class='content'>
     <view wx:if="{{todoList.length>0}}">
